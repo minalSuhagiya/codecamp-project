@@ -1,247 +1,97 @@
-:root{
-   --white: hsl(0, 0%, 100%);
-   --text:hsl(228,12%,48%);
-   --pale:hsl(32,37%,92%);
-   --green:hsl(158,36%,37%);
-}
 *{
    margin: 0;
+   padding: 0;
 }
+html{
+   scroll-behavior: smooth;
+}
+
 body{
-   background-color: var(--pale);
-}
-#header-img{
-   width:60px;
-   object-fit: contain;
-background-repeat: black
-   
-}
-#nav-bar{
+   background-color:rgb(234,234,234);
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   position: fixed;
-   width: 100%;
-   top: 0;
-   background-color: var(--white);
-   padding: 10px;
+   min-height: 100vh;
+   font-family: sans-serif;
 }
-.nav-links{
-   display: flex;
+section{
+   margin-top: 40px;
+}
+#navbar{
+   background-color: #fff;
+   width: 100%;
+   border-bottom: 1px solid;
+   overflow-x: auto; 
+   resize: horizontal;
+}
+#navbar li{
+   color: #4d4e53;
+   border-top: 1px solid black;
    list-style: none;
 }
-.nav-links a{
-   text-decoration: none;
-   color: var(--text);
- padding: 0 10px;
-}
-.logo-container{
-   display: flex;
-   align-items: center;
-}
-.the-product{
-   font-size: 25px;
-   margin-left: 10px;
-   font-weight: 700;
-}
-input{
-   padding: 8px;
-   border-radius: 5px;
-   border: 1px solid var(--green);
-}
-#submit{
-   background-color: var(--green);
-  cursor: pointer;
-   color: var(--white);
-}
-h2 {
-font-family: "fraunces";
-margin-bottom: 10px;
-}
-
-/* section::before{
+#navbar a{
    display: block;
-   content: "";
-   margin-top: -100px;
-   height: 100px;
-   visibility: hidden;
-   pointer-events: none;
-} */
-/* 
-#email-section{
-   margin-top: 800px;
-} */
-section{
-   margin-top: 100px;
-   /* margin: 40px 20px; */
-   text-align: center;
-}
-.icon{
-   color: var(--green);
-   margin-right: 50px;
-}
-#features{
-   text-align: left;
-   max-width: 888px;
-   margin: auto;
-}
-.features{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 20px;
-   font-family: "montserrat";
-   max-width: 700px;
-}
-#video{
-   width: 50%;
-}
-.product-img{
-width: 50%;
-   margin: auto;
-   height: 500px;
-   background-repeat: no-repeat;
-   background-size: cover;
-   border-radius: 10px 10px 0 0;
-   border: 1px solid var(--text);
-
-}
-.product1{
-   background-image:  url(https://ctl.s6img.com/society6/img/5g47ZBlaz-uB8zCRehX3gDu184M/w_700/posters/top/~artwork,fw_2715,fh_3619,fy_-181,iw_2730,ih_3997/s6-original-art-uploads/society6/uploads/misc/b6dd4175688b4790838aa00fc50b42a6/~~/dale-carnegie-how-to-win-friends-and-influence-people-quote-poster-posters.jpg?attempt=0);  
-}
-.product2{
-   background-image: url(https://5.imimg.com/data5/HB/LA/MY-11183377/rich-dad-poor-dad.png); 
-}
-.product3{
-   background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1692543578i/195076796.jpg   );
-   width: 400px;
-   height: 600px;
-
-}
-   .cards{
-   /* background-color: var(--white); */
-   margin: auto;
-   width: 70%;
-   border-radius: 10px;
-   margin-bottom: 10px;
-}
-.inner-card{
-   background-color: var(--white);
-   width: 50%;
-   margin: auto;
-   /* margin: auto;
-   width: 50%;
-   border-radius: 10px;
-   margin-bottom: 10px; */
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-padding: 10px;
-}
-.content{
-   margin-bottom: 10px;
-   color: var(--text);
-}
-.flex{
-   display: flex;
-   margin-bottom: 10px;
-   align-items: center;
-}
-.main-price{
-   margin-right: 20px;
-   font-size: 30px;
-   color: var(--green);
-   font-weight: 900;
-}
-.old-price{
-   text-decoration: line-through;
-   color: var(--text);
-}
-.author{
-   letter-spacing: 5px;
-   color: var(--text);
-   text-transform: uppercase;
-}
-.header{
-   margin: 10px 0;
-}
-button{
-   background-color: var(--green);
-   cursor: pointer;
-   border-radius:10px;
-   padding: 10px;
-   color: var(--white);
-   font-weight: 700;
-   /* display: flex; */
-   margin-bottom: 10px;
-   border: none;
-}
-#email form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
+   padding: 10px 30px;
+   color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: text-indent 0.3s ease-in-out;
   
- }
-
- #email input,
- #email input[type="submit"] {
-   margin: 5px 0;    
- }
-
-@media only screen and (min-width:600px) {
-   #nav-bar{
-      flex-direction: row;
-   }
-   #email form {
-      display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-   }
-   
 }
-@media only screen and (450px < width <600px) {
-   .cards{
-      font-size: 0.85rem;
-   }
-   .product-img{
-      height: 400px;
-   }
-   
+#navbar a:hover{
+   font-weight: 500;
+   text-indent: 5px;
 }
-
-@media only screen and (450px <= width) {
-   .cards{
-      display: flex;
-      max-width: 600px;
-      height: 70%;
-     
-   }
-   .inner-card{
-      /* width: 300px; */
-      padding: 20px;
-      margin: 0;
-      font-size: 1.2rem;
-      
-   }
-   .product-img{
-      width: 400px;
-      border-radius: 10px ;
-   }
-   
+p{
+   margin: 10px;
+}
+ol{
+   margin-left: 30px ;
+}
+#main-doc{
+   margin: 0 auto;
+}
+header{
+   color: black;
+   margin: 10px;
+   text-align: center;
+   font-size: 1.8em;
+   font-weight: 500;
+}
+code{
+   display: block;
+   text-align: left;
+   white-space: pre;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1.5;
+   background-color: #fff;
+   padding: 0 15px;
+   margin: 10px;
+}
+.image{
+   width: 100%;
+}
+footer{
+   padding: 30px;
+   text-align: center;
+   color: #888;
 }
 
-@media only screen and ( width >= 1000px  ) {
-   #video{
-      width: 70%;
+@media only screen and (min-width: 815px) {
+   body {
+       flex-direction: row;
    }
-
-   .product-cards{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-   }
+#navbar{
+   width:300px;
+   height: 100%;
+   position: fixed;
+}
+.image{
+   width: 70%;
+   margin-left: 20px;
+}
+#main-doc{
+   margin-left: 350px;
+}
 }
