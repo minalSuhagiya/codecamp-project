@@ -1,97 +1,262 @@
 *{
    margin: 0;
    padding: 0;
-}
-html{
    scroll-behavior: smooth;
 }
-
+:root{
+  --netural:#232946;
+  --text-color:#fffffe;
+  --netural-focus:#121619;
+  --p-color:#eebbc3;
+  --secondary:#b8c1ec;
+  --accent:#d4d8f0;
+}
 body{
-   background-color:rgb(234,234,234);
+   font-family: 'Noto Serif', serif;
+   text-align: center ;
+}
+h1, h2,h3, h4, h5, h6{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 900;
+}
+h1{
+   font-size: 60px ;
+}
+#navbar{
+   display: flex;
+   justify-content: flex-end;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color:var(--netural);
+   padding: 20px 0;
+   font-size: 20px;
+   z-index: 10;
+ 
+ 
+border-bottom: 1px solid var(--netural-focus);
+}
+.nav-links{
+   display: flex;
+   list-style: none;
+   margin-right: 2rem;
+  
+   /* font-family: serif; */
+}
+.nav-links a{
+   text-decoration: none;
+   padding: 0 10px;
+   color: var(--text-color);
+}
+.nav-links a:hover {
+   text-decoration: underline;
+}
+
+section{
+   padding: 80px 0;
+   /* min-height: 100vh; */
+}
+#welcome-section{
+   background-color: var(--netural);
+   color: var(--text-color);
    display: flex;
    flex-direction: column;
+   min-height: 80vh;
+   
+}
+#welcome-section h1{
+   margin-top: 30vh;
+}
+#welcome-section p{
+   color: var(--p-color);
+   font-size: 25px;
+   font-style: italic;
+   margin: 25px 0;
+}
+#projects{
+   background-color: var(--secondary);
+   color: var(--netural);
    min-height: 100vh;
-   font-family: sans-serif;
+   
 }
-section{
-   margin-top: 40px;
+#projects h1{
+border-bottom: 5px solid var(--netural);
+width: fit-content;
+margin: auto;
 }
-#navbar{
-   background-color: #fff;
+#projects .projects{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+   gap: 4rem;
+   padding: 20px;
+   place-items: center;
+   max-width: 1200px;
+   margin: auto;
+}
+#projects .project-tile {
+   height:425px;
    width: 100%;
-   border-bottom: 1px solid;
-   overflow-x: auto; 
-   resize: horizontal;
-}
-#navbar li{
-   color: #4d4e53;
-   border-top: 1px solid black;
-   list-style: none;
-}
-#navbar a{
-   display: block;
-   padding: 10px 30px;
-   color: #4d4e53;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 18px;
-  transition: text-indent 0.3s ease-in-out;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--netural);
+   color: var(--accent);
+   border-radius: 5px;
+   text-decoration: none;
+   box-shadow: 8px 8px 10px 5px rgba(100,100,100,1);
   
 }
-#navbar a:hover{
-   font-weight: 500;
-   text-indent: 5px;
-}
-p{
-   margin: 10px;
-}
-ol{
-   margin-left: 30px ;
-}
-#main-doc{
-   margin: 0 auto;
-}
-header{
-   color: black;
-   margin: 10px;
-   text-align: center;
-   font-size: 1.8em;
-   font-weight: 500;
-}
-code{
-   display: block;
-   text-align: left;
-   white-space: pre;
-   word-break: normal;
-   word-wrap: normal;
-   line-height: 1.5;
-   background-color: #fff;
-   padding: 0 15px;
-   margin: 10px;
-}
-.image{
+#projects .project-tile img{
+   height: 100%;
    width: 100%;
+   object-fit: cover;
+   
+  
 }
-footer{
-   padding: 30px;
-   text-align: center;
-   color: #888;
+#projects .project-tile p{
+   font-size: 25px;
+   padding: 10px;
+  
+}
+#projects .project-tile span{
+opacity: 0%;
+padding: 0 5px;
+}
+#projects .project-tile:hover span{
+opacity: 100%;
+color: var(--p-color);
+transition: opacity 0.25s ease-in;
+}
+.show-all{
+   text-decoration: none;
+   width: max-content;
+   display: flex;
+   align-items: center;
+   margin: auto;
+   padding: 10px 20px;
+   background-color: var(--netural);
+   color: var(--accent);
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.2s ease-in;
+}
+.show-all:hover{
+   background-color: var(--netural-focus);
+   color: var(--text-color);
+}
+ #contact{
+   background-color: var(--netural);
+   color: var(--text-color);
+   height:300px;
+   
+   
+}
+#contact h1{
+   margin-top: 50px;
+  
+}
+#contact .cofee-quetion{
+   color: var(--p-color);
+   font-size: 25px;
+   font-style: italic;
+   
+   
 }
 
-@media only screen and (min-width: 815px) {
-   body {
-       flex-direction: row;
+
+
+#contact .social-medias{
+   display: flex; 
+flex-wrap: wrap;
+max-width: 800px;
+/* height: 400px; */
+justify-content: space-around;
+margin: auto;
+margin-top: 30px;
+;
+}
+
+ 
+ 
+#contact .social-media{
+   text-decoration: none;
+   color: var(--text-color);
+   transition: transform 0.2s ease-in;
+   display: flex;
+   align-items: center;
+   margin: 20px;
+   font-size: 22px;
+  
+   /* height: 40px; */
+}
+#contact .social-media:hover{
+   transform: translateY(10px);
+}
+footer{
+   border-top: 5px solid var(--p-color);
+   color: var(--text-color);
+   font-size: 25px;
+   padding: 30px;
+ background-color: var(--netural);
+   /* margin-top: 400px;  */
+
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+   h1{
+      font-size: 50px;
    }
-#navbar{
-   width:300px;
-   height: 100%;
-   position: fixed;
-}
-.image{
-   width: 70%;
-   margin-left: 20px;
-}
-#main-doc{
-   margin-left: 350px;
-}
-}
+   #projects .project-tile {
+     height: 300px; 
+     width: 90%; 
+     max-width: 300px; 
+   }
+   #projects .project-tile img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+   }
+ }
+ 
+
+ /* its for a one row in 2image display */
+
+
+ /* @media only screen and (max-width: 700px) {
+   #projects .projects {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+     padding: 20px;
+     max-width: 100%;
+     margin: auto;
+   }
+   
+   #projects .project-tile {
+     height: 100%; 
+     width: 100%; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--netural);
+     color: var(--accent);
+     border-radius: 5px;
+     text-decoration: none;
+     box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 1);
+   }
+ 
+   #projects .project-tile img {
+     max-width: 100%; 
+     height: 100%; 
+     object-fit: cover;
+     overflow: hidden;
+   }
+ }
+  */

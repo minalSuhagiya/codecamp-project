@@ -1,168 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Technical Document</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link  rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+  <title>Protofolio Technicalpage</title>
+</head>
+<body>
+  <header>
     <nav id="navbar">
-      <header>Java Document</header>
-      <ul>
-        <li>
-          <a class="nav-link" href="#Getting_Started_with_Java"
-            >Getting Started with Java
-          </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#Java_Entry_Point">Java Entry Point </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#Printing_to_the_Console"
-            >Printing to the Console
-          </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#Declaring_Function">Declaring Function </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#Object_Oriented_Programing_Langauge"
-            >Object Oriented Programing Langauge
-          </a>
-        </li>
+      <ul class="nav-links">
+        <li><a href="#welcome-section" class="nav-link">Welcome</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
+  </header>
 
-    <main id="main-doc">
-      <section class="main-section" id="Getting_Started_with_Java">
-        <header>Getting Started with Java</header>
-        <p>Steps in Getting Started</p>
-        <ol>
-          <li>Download Java</li>
-          <li>Download Java SDK</li>
-          <li>Get in integrated Devlopment Environment(IDE)</li>
-          <li>Start project within the IDE</li>
-          <li>Code up Hello World! and run the code</li>
-        </ol>
-      </section>
-      <section class="main-section" id="Java_Entry_Point">
-        <header>Java Entry Point</header>
-        <p>
-          The main() method is the entry point for a Java application. run() is
-          typically used for new threads or tasks.
-        </p>
-        <p>
-          it is categorized by its (String[]arg) as a parameter to the function
-        </p>
-        <pre>
-    <code>
-      public class MyClass{
-      public static void main(String args[])
-      }
-    </code>
-  </pre>
-        <p>
-          Here’s an explanation of the different components of the entry point
-          method:
-        </p>
-        <ol>
-          <li>
-            public: It specifies that the entry point method is accessible from
-            outside the class.
-          </li>
-          <li>
-            static: It indicates that the entry point method belongs to the
-            class itself rather than an instance of the class.
-          </li>
-          <li>
-            void: It specifies that the entry point method does not return any
-            value.
-          </li>
-          <li>
-            main: It is the name of the method. This name is recognized by the
-            JVM as the entry point.
-          </li>
-          <li>
-            String[] args: It is the parameter passed to the entry point method.
-            It represents the command-line arguments passed to the program.
-          </li>
-        </ol>
-      </section>
-      <section class="main-section" id="Printing_to_the_Console">
-        <header>Printing to the Console</header>
-        <p>In order to print to the console. we use Syetem.out.println</p>
-        <pre>
-    <code>
-      public static void main(String[] args)   
-{   
-//declaration of different datatypes   
-int num = 122;   
-char ch = 'A';  
-System.out.println(num); //prints integer
- System.out.println(ch); //prints character  
-}
-    </code>
-  </pre>
-        <p>
-          In this example we are printing int and float value to the console
-          when we run the programe.
-        </p>
-      </section>
-      <section class="main-section" id="Declaring_Function">
-        <header>Declaring Function</header>
-        <p>
-          Methods are used to perform certain actions, and they are also known
-          as functions.
-        </p>
-        <img
-          src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/02/example-of-java-method-declaration.jpg"
-          alt="methode-img"
-          class="image"
-        />
-        <pre>
-          <code>
-            public static void main(String[] args)   
-{  
+  <section id="welcome-section">
+    <h1>Hello! i'm Minal Suhagiya</h1>
+    <p>A full stack devloper</p>
+  </section>
+</body>
+<section id="projects">
+  <h1>There are some of my projhects</h1>
+  <div class="projects">
+  <a href="" class="project-tile">
+    <img src="./project.png" alt="">
+    <p><span>&lt;</span>City Sky line<span>/&gt;</span></p>
+  </a>
+  <a href="" class="project-tile">
+    <img src="./pro2.png" alt="">
+    <p><span>&lt;</span>Tribiute Page<span>/&gt;</span></p>
+  </a>
+  <a href="" class="project-tile">
+    <img src="./pro3.png" alt="">
+    <p><span>&lt;</span>Product Landing<span>/&gt;</span></p>
+  </a>
+  <a href="" class="project-tile">
+    <img src="pro4.png" alt="">
+    <p><span>&lt;</span>Technical Page<span>/&gt;</span></p>
+  </a>
+  <a href="" class="project-tile">
+    <img src="./pro5.png" alt="">
+    <p><span>&lt;</span>Magazin<span>/&gt;</span></p>
+  </a>
+  <a href="" class="project-tile">
+    <img src="./pro6.png" alt="">
+    <p><span>&lt;</span>Cafe Menu<span>/&gt;</span></p>
+  </a>
+</div>
+<a href="" class="show-all">
+  Show All<i class="ri-arrow-right-s-line"></i>
+</a>
+</section>
+<section id="contact">
+  <h1>Let's work together..</h1>
+  <p class="cofee-quetion">How do you take your cofee</p>
+  <div class="social-medias">
+    <a href="https://www.facebook.com/" class="social-media" target="_blank">
+      <i class="ri-facebook-box-fill"></i>
+      <p>Facebook</p>
+    </a>
+    <a href="https://github.com/" class="social-media" target="_blank" id="profile-link">
+      <i class="ri-github-fill"></i>
+      <p>Github</p>
+    </a>
+    <a href="https://twitter.com" class="social-media" target="_blank" >
+      <i class="ri-twitter-fill"></i>
+      <p>Twitter</p>
+    </a>
+    <a href="" class="social-media">
+      <i class="ri-mail-send-line"></i>
+      <p>Send me a mail</p>
+    </a>
+    <a href="" class="social-media">
+      <i class="ri-smartphone-line"></i>
+      <p>Call me</p>
+    </a>
+  </div>
   
-        System.out.print("The maximum number is: " + Math.max(9,7));  
-}  
-          </code>
-        </pre>
-      </section>
-      <section class="main-section" class="Object_Oriented_Programing_Langauge">
-        <header>Object Oriented Programing Langauge</header>
-        <p>Java is an object-oriented programming language.</p>
-        <p>When the individual objects are created, they inherit all the variables and methods from the class.</p>
-        <p>Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.</p>
-        <pre>
-          <code>
-            public class Bird {
-              …
-              Public void sound ( ) {
-              System.out.println ( “ birds sounds “ );
-              }
-              }
-              public class pigeon extends Bird {
-              …
-              @override
-              public void sound ( ) {
-              System.out.println( “ cooing ” ) ;
-              }
-              }
-              public class sparrow extends Bird ( ) {
-              ….
-              @override
-              Public void sound ( ){
-              System.out.println( “ chip ” ) ;
-              }
-              }
-          </code>
-        </pre>
-      </section>
-      <footer>
-        <p>Documantation brought  to you can on the fly by Landon Schlangen</p>
-      </footer>
-    </main>
-  </body>
+</section>
+<footer>Created by Minal Suhagiya JAN-2024  </footer>
+</body>
 </html>
+  
