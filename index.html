@@ -4,91 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link  rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@100&display=swap" rel="stylesheet">
-  <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-  <title>Protofolio Technicalpage</title>
+  <title>Pallindrom free code</title>
 </head>
 <body>
-  <header>
-    <nav id="navbar">
-      <ul class="nav-links">
-        <li><a href="#welcome-section" class="nav-link">Welcome</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="welcome-section">
-    <h1>Hello! i'm Minal Suhagiya</h1>
-    <p>A full stack devloper</p>
-  </section>
-</body>
-<section id="projects">
-  <h1>There are some of my projhects</h1>
-  <div class="projects">
-  <a href="" class="project-tile">
-    <img src="./project.png" alt="">
-    <p><span>&lt;</span>City Sky line<span>/&gt;</span></p>
-  </a>
-  <a href="" class="project-tile">
-    <img src="./pro2.png" alt="">
-    <p><span>&lt;</span>Tribiute Page<span>/&gt;</span></p>
-  </a>
-  <a href="" class="project-tile">
-    <img src="./pro3.png" alt="">
-    <p><span>&lt;</span>Product Landing<span>/&gt;</span></p>
-  </a>
-  <a href="" class="project-tile">
-    <img src="pro4.png" alt="">
-    <p><span>&lt;</span>Technical Page<span>/&gt;</span></p>
-  </a>
-  <a href="" class="project-tile">
-    <img src="./pro5.png" alt="">
-    <p><span>&lt;</span>Magazin<span>/&gt;</span></p>
-  </a>
-  <a href="" class="project-tile">
-    <img src="./pro6.png" alt="">
-    <p><span>&lt;</span>Cafe Menu<span>/&gt;</span></p>
-  </a>
-</div>
-<a href="" class="show-all">
-  Show All<i class="ri-arrow-right-s-line"></i>
-</a>
-</section>
-<section id="contact">
-  <h1>Let's work together..</h1>
-  <p class="cofee-quetion">How do you take your cofee</p>
-  <div class="social-medias">
-    <a href="https://www.facebook.com/" class="social-media" target="_blank">
-      <i class="ri-facebook-box-fill"></i>
-      <p>Facebook</p>
-    </a>
-    <a href="https://github.com/" class="social-media" target="_blank" id="profile-link">
-      <i class="ri-github-fill"></i>
-      <p>Github</p>
-    </a>
-    <a href="https://twitter.com" class="social-media" target="_blank" >
-      <i class="ri-twitter-fill"></i>
-      <p>Twitter</p>
-    </a>
-    <a href="" class="social-media">
-      <i class="ri-mail-send-line"></i>
-      <p>Send me a mail</p>
-    </a>
-    <a href="" class="social-media">
-      <i class="ri-smartphone-line"></i>
-      <p>Call me</p>
-    </a>
+  <div class="container">
+    <h1>Is it a Palindrome?</h1>
+    <div class="inputs">
+      <label for="text-input">Enter in text to check for a palindrome:</label>
+      <input class="pali-input" type="text" id="text-input">
+      <button id="check-btn">Check</button>
+      <div id="result" class="hidden">
+        <p class="info-text" id="infoText"></p>
+      </div>
+      
+    </div>
+   
+    <div class="defination">
+    <p class="t-center"> A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
   </div>
-  
-</section>
-<footer>Created by Minal Suhagiya JAN-2024  </footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
-  

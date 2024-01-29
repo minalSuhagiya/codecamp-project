@@ -1,0 +1,288 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+
+
+
+.logo img {
+   position: absolute;
+   margin-top: 0px;
+   margin-left: 20px;
+}
+
+button{
+   background-color: aqua;
+   position: absolute;
+   display: flex;
+   justify-content: right;
+   height: 40px;
+   width: 40px;
+  align-items: right;
+
+}
+
+
+
+nav {
+   width: 100%;
+}
+
+ul {
+   display: flex;
+   width: 100%;
+   justify-content: right;
+   text-align: center;
+   background-color: rgb(14, 12, 60);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   align-items: center;
+   list-style: none;
+
+}
+
+li {
+   margin-right: 20px;
+   padding: 20px 15px;
+   
+}
+
+a {
+   text-decoration: none;
+   color: white;
+   font-size: 15px;
+   transition: transform 0.3s, background-color 0.3s;
+   /* word-spacing: 5px; */
+   letter-spacing: 3px;
+}
+
+.nav-list:hover {
+
+   background-color: brown;
+   
+  
+}
+
+.first {
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+/* .first img{
+   width: 100%;
+} */
+
+.first img {
+   height: 100vh;
+   width: calc(100vh * 16 / 9);
+   min-width: 100vw;
+   object-fit: cover;
+   width: 100%;
+   max-width: 100%;
+}
+
+#galary {
+   min-height: 100vh;
+}
+
+#galary h1 {
+   text-align: center;
+   margin-top: 30px;
+   font-weight: 1000;
+   font-size: 5 0px;
+}
+
+.line {
+   margin: auto;
+   width: 140px;
+   margin-top: 5px;
+   background-color: rgb(197, 73, 73);
+   height: 4px;
+
+}
+
+
+
+.galary {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 30px;
+   padding: 30px;
+   place-items: center;
+   max-width: 1200px;
+   margin: auto;
+   overflow: hidden;
+   position: relative;
+}
+
+.galary-pro {
+   height: 325px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* background-color: var(--netural); */
+   /* color: var(--accent); */
+   border-radius: 5px;
+   text-decoration: none;
+   box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 1);
+   object-fit: cover;
+   /* overflow: hidden; */
+   position: relative;
+}
+
+.img {
+   height: 100%;
+   display: block;
+   width: 100%;
+   object-fit: cover;
+   transition: filter 0.3s ease-in-out, filter 0.3s ease-in-out;
+   ;
+}
+
+
+p {
+   font-size: 20px;
+   color: black;
+   padding: 10px;
+   text-align: center;
+
+}
+
+span {
+   /* opacity: 0%; */
+  
+   padding: 0 5px;
+}
+
+#footer {
+   min-height: 50vh;
+   background-color: rgb(14, 12, 60);
+}
+
+h2 {
+   color: white;
+   text-align: center;
+   padding: 30px;
+   word-spacing: 5px;
+   letter-spacing: 4px;
+   font-size: 35px;
+   font-weight: 500;
+}
+
+.menu {
+   width: 100%;
+}
+
+#ul {
+   display: flex;
+   width: 100%;
+
+   justify-content: center;
+   text-align: center;
+   background-color: rgb(14, 12, 60);
+   padding-top: 10px;
+   align-items: center;
+   list-style: none;
+}
+
+.menu .list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
+}
+
+.menu .list li {
+   padding: 0;
+  
+}
+.menu .list li a{
+   letter-spacing: 3px;
+}
+
+
+
+.menu .list li:hover {
+   /* No styles here, or reset the styles to remove the hover effect */
+   color: inherit !important;
+   /* Use 'inherit' or the desired default color */
+}
+
+.menu .list li a:hover {
+   color: orange;
+   background-color: transparent !important;
+}
+
+.copy {
+
+   font-size: 20px;
+   /* margin-top: 150px; */
+   border-top: 2px solid orange;
+}
+
+.copy p {
+   color: white;
+   margin-top: 20px;
+   /* word-spacing: 2px;  */
+   letter-spacing: 2px;
+}
+
+.copy p #b {
+   color: orange;
+}
+
+.copy p #b:hover {
+   color: white;
+}
+
+.social-media-icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+
+.icon {
+   border: 2px solid gray;
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   margin: 10px;
+   position: relative;
+}
+
+.icon i {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+.icon:hover {
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   position: relative;
+   background-color: rgb(197, 73, 73);
+   border: 2px solid rgb(197, 73, 73);
+}
+
+@media only screen and (max-width: 600px) {
+   .first img {
+      height: 100%;
+      width: auto;
+      /* max-width: 100%; */
+   }
+}

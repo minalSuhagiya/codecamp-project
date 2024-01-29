@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+section{
+  min-height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:bisque;
+}
+.center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+}
+label{
+   margin-bottom: 4px;
+}
+.inputs{
+margin-bottom: 15px;
+border: transparent;
+border-bottom: 2px solid black;
+padding: 5px;
+}
+
+button{
+   padding: 4px;
+}
